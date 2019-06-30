@@ -1,8 +1,8 @@
 <?php
-    session_start();
-	 $location_counter = "data_pas.txt";
-	 $location_date = "date.txt";
-	 $itis = date ("d");
+	$location_counter = "../data_pengambilan.txt";
+	$location_date = "../date.txt";
+	$itis = date ("d");
+	 
 	 // Hari baru?    
 	$aday = join('', file($location_date));
 	trim($aday);
@@ -11,7 +11,7 @@
 		//Cari hari ini
 		$tcounter = join('', file($location_counter));
 		trim($tcounter);
-		$tcounter++;
+		//$tcounter++;
 		
 		$fp = fopen($location_counter,"w");
 		fputs($fp, $tcounter);
@@ -23,7 +23,7 @@
 		fclose($fp);
 		$tcounter = join('', file($location_counter));
 		trim($tcounter);
-		$tcounter++;
+		//$tcounter++;
 		//tulis hari baru
 		$fp = fopen($location_counter,"w");
 		fputs($fp, $tcounter);
@@ -33,13 +33,13 @@
 		fputs($fp, $itis);
 		fclose($fp);	
 	}
+
 	$panjang=strlen($tcounter);
 	$antrian=$tcounter;
+	
 	for($i=0;$i<$panjang;$i++){
-		?>
-		<?php
-	}
- $_SESSION['antrian']   = " <h1>No. T$antrian <br>Antrian Transaksi</h1> ";?>
+?>
 <?php
-echo json_encode('A-'.$antrian);
+	}
+	echo " <h1>No. C$antrian <br>Antrian Pengambilan</h1> ";             
 ?>

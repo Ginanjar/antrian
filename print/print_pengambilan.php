@@ -1,6 +1,6 @@
 <?php
     session_start();
-	 $location_counter = "data_pas.txt";
+	 $location_counter = "data_pengambilan.txt";
 	 $location_date = "date.txt";
 	 $itis = date ("d");
 	 // Hari baru?    
@@ -39,7 +39,7 @@
 		?>
 		<?php
 	}
- $_SESSION['antrian']   = " <h1>No. T$antrian <br>Antrian Transaksi</h1> ";?>
+ $_SESSION['antrian']   = " <h1>No. C$antrian <br>Antrian Pengambilan</h1> ";?>
 <?php
-echo json_encode('A-'.$antrian);
+echo json_encode('C-'.$antrian);
 ?>

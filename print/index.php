@@ -5,7 +5,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>.:: Aplikasi Antrian Bank ini ::.</title>
+    <title>.:: Aplikasi Antrian Poltekpel Sumbar ::.</title>
     <meta name="description" content="Aplikasi Antrian">
     <meta name="author" content="M.Mattawang.S.Kom">
     <meta name="keywords" content="programmer jalanan">
@@ -39,7 +39,7 @@
     </div>
 </div>
 <footer class="container">
-    <p id="footer-text"><small>APLIKASI ANTRIAN BANK INI<br>
+    <p id="footer-text"><small>APLIKASI ANTRIAN Poltekpel Sumbar<br>
 </small></p>
 </footer>
 <script src="loginStyle/js/login.js"></script>

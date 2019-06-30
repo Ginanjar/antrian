@@ -9,7 +9,7 @@ if ($_SESSION[leveluser]=='admin' OR $_SESSION[leveluser]=='loket pas' ){
 $detail = mysql_query("SELECT * FROM
                             loket
                             WHERE
-                            nama_loket='TRANSAKSI'");
+                            nama_loket='PNBP'");
     $r    = mysql_fetch_array($detail);
     $loket=$r[no_loket];
 ?>
@@ -19,7 +19,7 @@ $detail = mysql_query("SELECT * FROM
             <div class="well well-black">
                 <hr>
                                 <div class="section-title">
-                                    <center><h4 style="font-weight:bold; color:gray;"><i class=" fontello-icon-docs"></i> Loket transaksi </h4></center>
+                                    <center><h4 style="font-weight:bold; color:gray;"><i class=" fontello-icon-docs"></i> Loket PNBP </h4></center>
                                 </div>
                 <div class="row-fluid">
                         <div class="span4">
@@ -200,12 +200,12 @@ $detail = mysql_query("SELECT * FROM
         </div>
     </div>
 </div>
-                        <script>
+<script>
                             $('#modal').on('show', function() {
     $('#confirm-delete').on('show.bs.modal', function(e) {
     $(this).find('.danger').attr('href', $(e.relatedTarget).data('href'));
 });
-                            </script>        
+</script>        
                             
 <div class="modal fade" id="confirm-restart-print" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">

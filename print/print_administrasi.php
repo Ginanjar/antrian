@@ -135,7 +135,7 @@ printer_start_page($p);
 
 $font = printer_create_font("Arial", 38, 10, PRINTER_FW_NORMAL, false, false, false, 0);
 printer_select_font($p, $font);
-printer_draw_text($p, "BANK INI",100,0);
+printer_draw_text($p, "Poltekpel Sumbar",100,0);
 //printer_draw_text($p, "",250,20);
 // Header Bon
 $pen = printer_create_pen(PRINTER_PEN_SOLID, 1, "000000");

@@ -23,7 +23,7 @@
                     <div class="container-fluid">
                        
                         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                        <a class="brand" href="?link=home"> Loket Antrian Bank Ini</a>
+                        <a class="brand" href="?link=home"> Loket Antrian Poltekpel Sumbar</a>
                         <div class="nav-collapse collapse">
                              <?php include('element/menus_system.php'); ?>
                              

@@ -17,6 +17,9 @@ elseif ($_GET['link']=='menu-antrian-transaksi'){
 elseif ($_GET['link']=='menu-antrian-administrasi'){
     include "modul/menu_antrian/administrasi.php";
 }
+elseif ($_GET['link']=='menu-antrian-pengambilan'){
+    include "modul/menu_antrian/pengambilan.php";
+}
 elseif ($_GET['link']=='daftar-customer-transaksi'){
     include "modul/save_antrian/daftar_transaksi.php";
 }

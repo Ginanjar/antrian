@@ -13,7 +13,7 @@ error_reporting(0);
 
 <head>
 <meta charset="utf-8">
-<title>Boo Admin - Dashboard 1</title>
+<title>Poltekpel Sumbar - Antrian</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -58,7 +58,7 @@ error_reporting(0);
                 <div class="navbar-inner">
                     <div class="container-fluid">
                         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                        <a class="brand" href="javascript:void(0);"><h3>Antrian Bank Ini</h3></a>
+                        <a class="brand" href="javascript:void(0);"><h3>Antrian Poltekpel Sumbar</h3></a>
 		
                     </div>
                 </div>
@@ -113,7 +113,7 @@ error_reporting(0);
     <footer id="footer-fix">
         <div id="footer-sidebar" class="footer-sidebar">
             <div class="navbar">
-                <center><div class="clock"></div></center>
+                <!-- <center><div class="clock"></div></center> -->
             </div>
         </div>
         <!-- // footer sidebar -->

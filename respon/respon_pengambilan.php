@@ -1,24 +1,24 @@
 <?php
 
 include '../config/database.php';
-     $sql = mysql_query("SELECT nomor_antrian FROM `temp_administrasi`
+     $sql = mysql_query("SELECT nomor_antrian FROM `temp_pengambilan`
                                         WHERE id = '1'");
       $r    = mysql_fetch_array($sql);
         $nomor = $r[nomor_antrian];
-      echo "B$r[nomor_antrian]";
+      echo "C$r[nomor_antrian]";
 ?>
 <?php
 $detail = mysql_query("SELECT * FROM
                             loket
                             WHERE
-                            nama_loket='DPM'");
+                            nama_loket='PENGAMBILAN'");
 $d    = mysql_fetch_array($detail);
 $loket=$d[no_loket];
 //Initialisasi nilai untuk nomor loket
 
 
-$location_counter = "content/administrasi/data.txt";
-$location_date = "content/administrasi/date.txt";
+$location_counter = "content/pengambilan/data.txt";
+$location_date = "content/pengambilan/date.txt";
 $itis = date ("d");
 
 $panjang=strlen($nomor);

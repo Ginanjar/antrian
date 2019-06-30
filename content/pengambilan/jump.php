@@ -1,8 +1,9 @@
 <?php
-    session_start();
-	 $location_counter = "data_pas.txt";
+session_start();
+	 $location_counter = "data.txt";
 	 $location_date = "date.txt";
 	 $itis = date ("d");
+	 
 	 // Hari baru?    
 	$aday = join('', file($location_date));
 	trim($aday);
@@ -11,7 +12,7 @@
 		//Cari hari ini
 		$tcounter = join('', file($location_counter));
 		trim($tcounter);
-		$tcounter++;
+		$tcounter=$_POST[jump];
 		
 		$fp = fopen($location_counter,"w");
 		fputs($fp, $tcounter);
@@ -33,13 +34,19 @@
 		fputs($fp, $itis);
 		fclose($fp);	
 	}
+
 	$panjang=strlen($tcounter);
 	$antrian=$tcounter;
-	for($i=0;$i<$panjang;$i++){
-		?>
-		<?php
-	}
- $_SESSION['antrian']   = " <h1>No. T$antrian <br>Antrian Transaksi</h1> ";?>
-<?php
-echo json_encode('A-'.$antrian);
+                
+                
+                $_SESSION['suara1']   = "$tcounter";
+                $_SESSION['suara2']   = "$antrian";
+	$_SESSION['antrian_loket']   = "C$antrian";
+                //echo "$antrian";
+                include '../../config/database.php';
+                include '../../config/fungsi_zona.php';
+                mysql_query("UPDATE temp_pengambilan SET nomor_antrian='$antrian', 
+                                time='$wita'
+                                WHERE id = '1'");
+                header("location:../../system.php?link=menu-antrian-pengambilan");
 ?>

@@ -5,13 +5,13 @@ include '../config/database.php';
                                         WHERE id = '1'");
       $r    = mysql_fetch_array($sql);
         $nomor = $r[nomor_antrian];
-      echo "T$r[nomor_antrian]";
+      echo "A$r[nomor_antrian]";
 ?>
 <?php
 $detail = mysql_query("SELECT * FROM
                             loket
                             WHERE
-                            nama_loket='TRANSAKSI'");
+                            nama_loket='PNBP'");
 $d    = mysql_fetch_array($detail);
 $loket=$d[no_loket];
 //Initialisasi nilai untuk nomor loket

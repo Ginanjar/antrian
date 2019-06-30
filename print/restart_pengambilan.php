@@ -1,6 +1,6 @@
 <?php
 session_start();
-			 $location_counter = "data_pas.txt";
+			 $location_counter = "data_pengambilan.txt";
 			 $location_date = "date.txt";
 			 $itis = date ("d");
 			 
@@ -41,12 +41,12 @@ session_start();
                         
                         $_SESSION['suara1']   = "$tcounter";
                         $_SESSION['suara2']   = "$antrian";
-			$_SESSION['antrian_loket']   = "B$antrian";
+			$_SESSION['antrian_loket']   = "C$antrian";
                         //echo "$antrian";
                        // include '../../config/database.php';
                         //include '../../config/fungsi_zona.php';
                         //mysql_query("UPDATE temp_pas SET nomor_antrian='$antrian', 
                           //              time='$wita'
                             //            WHERE id = '1'");
-                        header("location:../system.php?link=menu-antrian-transaksi");
+                        header("location:../system.php?link=menu-antrian-pengambilan");
 		?>

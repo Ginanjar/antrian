@@ -3,41 +3,37 @@ $detail = mysql_query("SELECT * FROM
                             users
                             WHERE 
                             USER_ID='$_SESSION[user_id]'");
-    $r    = mysql_fetch_array($detail);
+$r = mysql_fetch_array($detail);
 ?>
             
     <div class="widget widget-simple">
-                                <div class="widget-header">
-                                    <p><a href="#" data-toggle="modal" data-target="#confirm-detail"><img alt="foto" src="webroot/foto_akun/<?php echo "$r[FOTO]";?>" height="50" width="50"/></a> <span class="label label-success"><?php echo "$r[NAMA_LENGKAP]";?> </span></p>
-                                </div>
-                                <div class="widget-content">
-                                    <div class="widget-body">
-                                        <nav>
-                    
-                
-                     </nav>
+        <div class="widget-header">
+            <p><a href="#" data-toggle="modal" data-target="#confirm-detail"><img alt="foto" src="webroot/foto_akun/<?php echo "$r[FOTO]";?>" height="50" width="50"/></a> <span class="label label-success"><?php echo "$r[NAMA_LENGKAP]";?> </span></p>
+        </div>
+        <div class="widget-content">
+            <div class="widget-body">
                 <nav>
                     <ul class="nav nav-center " style="margin-top: 20px">
-                       <li><a class="btn btn-well btn-glyph" href="?link=menu-antrian-transaksi" style="width:82px"><i class="  fontello-icon-credit-card f30"></i><span class="block">ANTRIAN TRANSAKSI</span></a></li>
-                        <li><a class="btn btn-well btn-glyph" href="?link=daftar-customer-transaksi" style="width:82px" data-toggle="modal"><i class="fontello-icon-edit-2 f30"></i><span class="block">CUSTOMER TRANSAKSI</span></a></li>
-                        
-                        
+                       <li><a class="btn btn-well btn-glyph" href="?link=menu-antrian-transaksi" style="width:82px"><i class="  fontello-icon-credit-card f30"></i><span class="block">ANTRIAN PNBP</span></a></li>
+                        <li><a class="btn btn-well btn-glyph" href="?link=daftar-customer-transaksi" style="width:82px" data-toggle="modal"><i class="fontello-icon-edit-2 f30"></i><span class="block">CUSTOMER PNBP</span></a></li>
                     </ul>
-                <ul class="nav nav-center " style="margin-top: 20px">
-                       <li><a class="btn btn-well btn-glyph" href="?link=menu-antrian-administrasi" style="width:82px"><i class=" fontello-icon-docs f30"></i><span class="block">ANTRIAN ADMINISTRASI</span></a></li>
-                        <li><a class="btn btn-well btn-glyph" href="?link=daftar-customer-administrasi" style="width:82px" data-toggle="modal"><i class="fontello-icon-edit-2 f30"></i><span class="block">CUSTOMER ADMINISTRASI</span></a></li>
-                        
-                        
+                    <ul class="nav nav-center " style="margin-top: 20px">
+                       <li><a class="btn btn-well btn-glyph" href="?link=menu-antrian-administrasi" style="width:82px"><i class=" fontello-icon-docs f30"></i><span class="block">ANTRIAN DPM</span></a></li>
+                        <li><a class="btn btn-well btn-glyph" href="?link=daftar-customer-administrasi" style="width:82px" data-toggle="modal"><i class="fontello-icon-edit-2 f30"></i><span class="block">CUSTOMER DPM</span></a></li>
+                    </ul>
+                    <ul class="nav nav-center " style="margin-top: 20px">
+                       <li><a class="btn btn-well btn-glyph" href="?link=menu-antrian-pengambilan" style="width:82px"><i class=" fontello-icon-post f30"></i><span class="block">ANTRIAN PENGAMBILAN</span></a></li>
+                        <li><a class="btn btn-well btn-glyph" href="?link=daftar-customer-pengambilan" style="width:82px" data-toggle="modal"><i class="fontello-icon-post f30"></i><span class="block">CUSTOMER PENGAMBILAN</span></a></li>
                     </ul>
                     <ul class="nav nav-center " style="margin-top: 20px">
                        <li><a class="btn btn-well btn-glyph" href="logout.php" style="width:82px"><i class=" fontello-icon-logout f30"></i><span class="block">EXIT</span></a></li>
                         
                         
                     </ul>
-                     </nav>
-                                    </div>
-                                </div>
-                            </div>
+                </nav>
+            </div>
+        </div>
+    </div>
          
             <!-- // page content --> 
             

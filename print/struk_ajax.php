@@ -1,3 +1,4 @@
+
 <?php 
  session_start();
 error_reporting(0);
@@ -27,7 +28,7 @@ else{
 -->
 <html>
 	<head>
-		<title>BANK INI
+		<title>Poltekpel Sumbar
 </title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
@@ -44,6 +45,7 @@ else{
 		</noscript>
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<script src="https://cdn.jsdelivr.net/npm/recta/dist/recta.js"></script>
 	</head>
 	<body class="loading">
 		<div id="wrapper">
@@ -54,13 +56,15 @@ else{
 				<!-- Header -->
 					<header id="header">
 
-						<h1>BANK INI </h1>
+						<h1>Poltekpel Sumatera Barat </h1>
 						<p>Silahkan Pilih Menu Antrian Dan Ambil Nomor Antrian</p>
 						<nav>
 							<ul>
-								<li><a id="pas" href="#" class="fa fa-money"><span>Twitter</span>Transaksi</a></li>
+								<li><a id="pas" href="#" class="fa fa-font"><span>Twitter</span>PNBP</a></li>
 								<li></li>
-								<li><a id="administrasi" href="#" class="fa fa-book"><span>Email</span>Administrasi</a></li>
+								<li><a id="administrasi" href="#" class="fa fa-bold"><span>Email</span>DPM</a></li>
+								<li></li>
+								<li><a id="pengambilan" href="#" class="fa fa-book"><span>Email</span>PENGAMBILAN</a></li>
 							</ul>
 						</nav><br>
                                                 <span class="counter" ></span>
@@ -88,10 +92,27 @@ $(document).ready(function () {
     // rest of your code
     $.ajax({
          type: "POST",
+    	 //dataType: 'json', 
          url: "print_transaksi.php",
          success: function (response) {
              $(".counter").load("respon/respon_transaksi.php");
-             //alert ("successfully loaded");
+             var printer = new Recta('1114058730', '1811');
+             printer.open().then(function () {
+		      printer.align('center')
+		        .mode()
+		        .text('Anda Antrian Ke')
+		        .bold(true)
+		        .mode('B',true,true,true,false)
+		        .text(response)
+		        .mode()
+		        .text()
+		        .text('<?php echo date("d/m/Y H:i:s");?>')
+		        .text('Poltekpel Sumatera Barat')
+		        .bold(false)
+		        .feed()
+		        .cut(true,0)
+		        .print()
+		    });
          }
      });
     }
@@ -104,17 +125,36 @@ $(document).ready(function () {
         back();
    });
    function back() {
-// AJAX Call Below
-// rest of your code
-$.ajax({
-     type: "POST",
-     url: "print_administrasi.php",
-     success: function (response) {
-         $(".counter").load("respon/respon_administrasi.php");
-         //alert ("successfully loaded");
-     }    
- });
-}
+	// AJAX Call Below
+	// rest of your code
+	$.ajax({
+	     type: "POST",
+	     url: "print_administrasi.php",
+	     success: function (response) {
+	         $(".counter").load("respon/respon_administrasi.php");
+	         //alert ("successfully loaded");
+	     }    
+	 });
+	}
+
+	$('#pengambilan').click(function(e){
+	    e.preventDefault();
+	    e.stopPropagation();
+	    ambil();
+	});
+
+	function ambil() {
+	// AJAX Call Below
+	// rest of your code
+	$.ajax({
+	     type: "POST",
+	     url: "print_pengambilan.php",
+	     success: function (response) {
+	         $(".counter").load("respon/respon_pengambilan.php");
+	         //alert ("successfully loaded");
+	     }    
+	 });
+	}
 
 </script>
 	</body>

@@ -9,7 +9,7 @@ if ($_SESSION[leveluser]=='admin' OR $_SESSION[leveluser]=='loket administrasi' 
 $detail = mysql_query("SELECT * FROM
                             loket
                             WHERE
-                            nama_loket='ADMINISTRASI'");
+                            nama_loket='DPM'");
     $r    = mysql_fetch_array($detail);
     $loket=$r[no_loket];
 ?>
@@ -19,7 +19,7 @@ $detail = mysql_query("SELECT * FROM
             <div class="well well-black">
                 <hr>
                                 <div class="section-title">
-                                    <center><h4 style="font-weight:bold; color:gray;"><i class=" fontello-icon-docs"></i> Loket administrasi </h4></center>
+                                    <center><h4 style="font-weight:bold; color:gray;"><i class=" fontello-icon-docs"></i> Loket DPM </h4></center>
                                 </div>
                 <div class="row-fluid">
                         <div class="span4">
