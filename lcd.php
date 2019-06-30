@@ -58,11 +58,11 @@ include 'config/database.php';
                     <div class="panel-body">
                         <div class="left box col-md-8">
                             <div class="head">Nomor Antrian</div>
-                            <div class="content">A1</div>
+                            <div class="content" id="responsecontainer"></div>
                         </div>
                         <div class="right box col-md-4">
                             <div class="head">LOKET</div>
-                            <div class="content">A</div>
+                            <div class="content" id="loket_transaksi"></div>
                         </div>
                     </div>
                 </div>
@@ -70,11 +70,11 @@ include 'config/database.php';
                     <div class="panel-body">
                         <div class="left box col-md-8">
                             <div class="head">Nomor Antrian</div>
-                            <div class="content">A1</div>
+                            <div class="content" id="respon_administrasi"></div>
                         </div>
                         <div class="right box col-md-4">
                             <div class="head">LOKET</div>
-                            <div class="content">B</div>
+                            <div class="content" id="loket_administrasi"></div>
                         </div>
                     </div>
                 </div>
@@ -82,11 +82,11 @@ include 'config/database.php';
                     <div class="panel-body">
                         <div class="left box col-md-8">
                             <div class="head">Nomor Antrian</div>
-                            <div class="content">A1</div>
+                            <div class="content" id="respon_pengambilan"></div>
                         </div>
                         <div class="right box col-md-4">
                             <div class="head">LOKET</div>
-                            <div class="content">C</div>
+                            <div class="content" id="loket_pengambilan"></div>
                         </div>
                     </div>
                 </div>
@@ -119,5 +119,41 @@ include 'config/database.php';
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $("#responsecontainer").load("respon/respon_transaksi.php");
+            var refreshId = setInterval(function() {
+                $("#responsecontainer").load('respon/respon_transaksi.php');
+            }, 3000);
+            $.ajaxSetup({ cache: false });
+            $("#loket_transaksi").load("respon/loket_transaksi.php");
+            var refreshId = setInterval(function() {
+              $("#loket_transaksi").load('respon/loket_transaksi.php');
+            }, 3000);
+            $.ajaxSetup({ cache: false });
+
+            $("#respon_administrasi").load("respon/respon_administrasi.php");
+            var refreshId = setInterval(function() {
+                $("#respon_administrasi").load('respon/respon_administrasi.php');
+            }, 3000);
+            $.ajaxSetup({ cache: false });
+            $("#loket_administrasi").load("respon/loket_administrasi.php");
+            var refreshId = setInterval(function() {
+              $("#loket_administrasi").load('respon/loket_administrasi.php');
+            }, 3000);
+            $.ajaxSetup({ cache: false })
+
+            $("#respon_pengambilan").load("respon/respon_pengambilan.php");
+            var refreshId = setInterval(function() {
+                $("#respon_pengambilan").load('respon/respon_pengambilan.php');
+            }, 3000);
+            $.ajaxSetup({ cache: false });
+            $("#loket_pengambilan").load("respon/loket_pengambilan.php");
+            var refreshId = setInterval(function() {
+              $("#loket_pengambilan").load('respon/loket_pengambilan.php');
+            }, 3000);
+            $.ajaxSetup({ cache: false })
+        });
+    </script>
 </body>
 </html>
