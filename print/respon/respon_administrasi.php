@@ -42,6 +42,6 @@ $location_counter = "../data_administrasi.txt";
         		   		        
         <?php
 			}
-                        echo " <h1>No. B$antrian <br>Antrian Administrasi</h1> ";
+                        echo " <h1>No. B$antrian <br>Antrian DPM</h1> ";
                         
 		?>

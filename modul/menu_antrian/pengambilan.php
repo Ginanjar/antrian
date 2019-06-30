@@ -120,7 +120,7 @@ $detail = mysql_query("SELECT * FROM
 <div class="modal fade" id="confirm-save" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <?php $control="controller.php";?>
-        <form  id="formNextAccountSettings" class="form-condensed" action="<?php echo "$control?link=save-antrian-transaksi&act=input";?>" method="POST">
+        <form  id="formNextAccountSettings" class="form-condensed" action="<?php echo "$control?link=save-antrian-pengambilan&act=input";?>" method="POST">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

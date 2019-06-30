@@ -41,5 +41,5 @@
 	}
  $_SESSION['antrian']   = " <h1>No. T$antrian <br>Antrian Transaksi</h1> ";?>
 <?php
-echo json_encode('A-'.$antrian);
+echo json_encode($antrian);
 ?>

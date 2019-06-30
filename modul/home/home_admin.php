@@ -15,16 +15,16 @@ $r = mysql_fetch_array($detail);
                 <nav>
                     <ul class="nav nav-center " style="margin-top: 20px">
                        <li><a class="btn btn-well btn-glyph" href="?link=menu-antrian-transaksi" style="width:82px"><i class="  fontello-icon-credit-card f30"></i><span class="block">ANTRIAN PNBP</span></a></li>
-                        <li><a class="btn btn-well btn-glyph" href="?link=daftar-customer-transaksi" style="width:82px" data-toggle="modal"><i class="fontello-icon-edit-2 f30"></i><span class="block">CUSTOMER PNBP</span></a></li>
-                    </ul>
-                    <ul class="nav nav-center " style="margin-top: 20px">
                        <li><a class="btn btn-well btn-glyph" href="?link=menu-antrian-administrasi" style="width:82px"><i class=" fontello-icon-docs f30"></i><span class="block">ANTRIAN DPM</span></a></li>
+                       <li><a class="btn btn-well btn-glyph" href="?link=menu-antrian-pengambilan" style="width:82px"><i class=" fontello-icon-post f30"></i><span class="block">ANTRIAN PENGAMBILAN</span></a></li>
+                        <!-- <li><a class="btn btn-well btn-glyph" href="?link=daftar-customer-transaksi" style="width:82px" data-toggle="modal"><i class="fontello-icon-edit-2 f30"></i><span class="block">CUSTOMER PNBP</span></a></li> -->
+                    </ul>
+                    <!-- <ul class="nav nav-center " style="margin-top: 20px">
                         <li><a class="btn btn-well btn-glyph" href="?link=daftar-customer-administrasi" style="width:82px" data-toggle="modal"><i class="fontello-icon-edit-2 f30"></i><span class="block">CUSTOMER DPM</span></a></li>
                     </ul>
                     <ul class="nav nav-center " style="margin-top: 20px">
-                       <li><a class="btn btn-well btn-glyph" href="?link=menu-antrian-pengambilan" style="width:82px"><i class=" fontello-icon-post f30"></i><span class="block">ANTRIAN PENGAMBILAN</span></a></li>
                         <li><a class="btn btn-well btn-glyph" href="?link=daftar-customer-pengambilan" style="width:82px" data-toggle="modal"><i class="fontello-icon-post f30"></i><span class="block">CUSTOMER PENGAMBILAN</span></a></li>
-                    </ul>
+                    </ul> -->
                     <ul class="nav nav-center " style="margin-top: 20px">
                        <li><a class="btn btn-well btn-glyph" href="logout.php" style="width:82px"><i class=" fontello-icon-logout f30"></i><span class="block">EXIT</span></a></li>
                         

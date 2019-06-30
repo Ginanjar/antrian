@@ -42,6 +42,6 @@ $location_counter = "../data_pas.txt";
         		   		        
         <?php
 			}
-                        echo " <h1>No. A$antrian <br>Antrian Transaksi</h1> ";
+                        echo " <h1>No. A$antrian <br>Antrian PNBP</h1> ";
                         
 		?>

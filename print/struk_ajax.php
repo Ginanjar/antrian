@@ -103,7 +103,7 @@ $(document).ready(function () {
 		        .text('Anda Antrian Ke')
 		        .bold(true)
 		        .mode('B',true,true,true,false)
-		        .text(response)
+		        .text("A"+response)
 		        .mode()
 		        .text()
 		        .text('<?php echo date("d/m/Y H:i:s");?>')
