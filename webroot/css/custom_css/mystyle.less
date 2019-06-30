@@ -1,0 +1,83 @@
+@import url("fonts.css");
+body {
+    background: url("../../img/background/body-bg-02-55.jpg") repeat scroll 0 0;
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+    .outer {
+        width: 100%;
+        .column {
+            padding: 1rem;
+            padding-top: 2rem;
+            .header {
+                position: fixed;
+                text-align: right;
+                color: aliceblue;
+                width: 56.333333%;
+                right: 0;
+                top: 0;
+                background-color: #323538;
+                box-shadow: 5px 5px 5px #373b3e;
+                padding: 0 2em 1em 0;
+                border-bottom-left-radius: 4px;
+                height: 5em;
+                clear: both;
+            }
+            .video-section {
+                position: relative;
+                clear: both;
+                padding-top: 7rem;
+            }
+            .static {
+                position: relative;
+                clear: both;
+                padding-top: 1em;
+            }
+            .panel {
+                background-color: transparent;
+                border-color: #373b3e;
+                .panel-body {
+                    padding: 0px;
+                    background-color: #323538;
+                    .box {
+                        color: aliceblue;
+                        padding: 1em;
+                        display: inline-box;
+                        text-align: center;
+                        height: 12em;
+                        &.left {
+                            float: left;
+                            .head {
+                                font-size: 2em;
+                            }
+                            .content {
+                                font-size: 6em;
+                                font-weight: bold;
+                                line-height: 1.2;
+                            }
+                        }
+                        &.right {
+                            float: right;
+                            background-color: #373b3e;
+                            .head {
+                                font-size: 2em;
+                            }
+                            .content {
+                                font-size: 6em;
+                                // font-weight: bold;
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .running_text {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #323538;
+            height: 3.5rem;
+            padding-top: 0.75rem;
+        }
+    }
+}

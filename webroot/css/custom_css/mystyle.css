@@ -1,0 +1,82 @@
+@import url("fonts.css");
+body {
+  background: url("../../img/background/body-bg-02-55.jpg") repeat scroll 0 0;
+  font-family: 'Rubik', sans-serif;
+  color: aliceblue;
+}
+body .outer {
+  width: 100%;
+}
+body .outer .column {
+  padding: 1rem;
+  padding-top: 2rem;
+}
+body .outer .column .header {
+  position: fixed;
+  text-align: right;
+  color: aliceblue;
+  width: 56.333333%;
+  right: 0;
+  top: 0;
+  background-color: #323538;
+  box-shadow: 5px 5px 5px #373b3e;
+  padding: 0 2em 1em 0;
+  border-bottom-left-radius: 4px;
+  height: 5em;
+  clear: both;
+}
+body .outer .column .video-section {
+  position: relative;
+  clear: both;
+  padding-top: 7rem;
+}
+body .outer .column .static {
+  position: relative;
+  clear: both;
+  padding-top: 1em;
+}
+body .outer .column .panel {
+  background-color: transparent;
+  border-color: #373b3e;
+}
+body .outer .column .panel .panel-body {
+  padding: 0px;
+  background-color: #323538;
+}
+body .outer .column .panel .panel-body .box {
+  color: aliceblue;
+  padding: 1em;
+  display: inline-box;
+  text-align: center;
+  height: 12em;
+}
+body .outer .column .panel .panel-body .box.left {
+  float: left;
+}
+body .outer .column .panel .panel-body .box.left .head {
+  font-size: 2em;
+}
+body .outer .column .panel .panel-body .box.left .content {
+  font-size: 6em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+body .outer .column .panel .panel-body .box.right {
+  float: right;
+  background-color: #373b3e;
+}
+body .outer .column .panel .panel-body .box.right .head {
+  font-size: 2em;
+}
+body .outer .column .panel .panel-body .box.right .content {
+  font-size: 6em;
+  line-height: 1.2;
+}
+body .outer .running_text {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #323538;
+  height: 3.5rem;
+  padding-top: 0.75rem;
+}
