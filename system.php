@@ -19,6 +19,11 @@ if (empty($_SESSION['username']) AND empty($_SESSION['passuser']) AND $_SESSION[
 else{
     include('headerSystem.php'); 
 ?>
+<style type="text/css">
+  body{
+    color: #333333;
+  }
+</style>
 <div id="main-container">
         
         <div id="main-content" class="main-content container-fluid">
